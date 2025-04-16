@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Hotel Booking</title>
+    <link rel="stylesheet" href="hh.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Grand Hotel</h1>
+        <div id="aa">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    
+    <section id="home">
+        <h2>Luxury & Elegance</h2>
+        <p>Stay with us and indulge in the finest hospitality experience.</p>
+        <img src ="https://plus.unsplash.com/premium_photo-1661964071015-d97428970584?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bG9iYnklMjBob3RlbHxlbnwwfHwwfHx8MA%3D%3D" alt="Hotel Lobby" width="100%">
+    </section>
+    
+    <section id="rooms">
+        <h2>Our Accommodations</h2>
+        <div class="room-list">
+            <div class="room">
+                <img src="hotel1.jpeg" alt="Standard Room" width="100%">
+                <h3>Standard Room</h3>
+                <p>$150 per night</p>
+                <button onclick="reserveNow('Standard Room')">Reserve</button>
+            </div>
+            <div class="room">
+                <img src="hotel2.jpg" alt="Luxury Suite" width="100%">
+                <h3>Luxury Suite</h3>
+                <p>$300 per night</p>
+                <button onclick="reserveNow('Luxury Suite')">Reserve</button>
+            </div>
+            <div class="room">
+                <img src="hotel3.jpeg" alt="Royal Penthouse" width="100%">
+                <h3>Royal Penthouse</h3>
+                <p>$600 per night</p>
+                <button onclick="reserveNow('Royal Penthouse')">Reserve</button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="reservation">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+            
+            <label for="room-category">Select Room:</label>
+            <select id="room-category">
+                <option value="Standard Room">Standard Room</option>
+                <option value="Luxury Suite">Luxury Suite</option>
+                <option value="Royal Penthouse">Royal Penthouse</option>
+            </select>
+            
+            <label for="arrival-date">Arrival Date:</label>
+            <input type="date" id="arrival-date" required>
+            
+            <label for="departure-date">Departure Date:</label>
+            <input type="date" id="departure-date" required>
+            
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: info@grandhotel.com</p>
+        <p>Phone: +987 654 3210</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Grand Hotel. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
